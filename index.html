@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/grap.js" ></script>
+		<script type="text/javascript" src="js/limitgrap.js" ></script>
+		<style>
+			#div1{
+				width: 200px;
+				height: 200px;
+				background: yellow;
+				position: absolute;
+			}
+			#div2{
+				width: 200px;
+				height: 200px;
+				background: green;
+				position: absolute;
+			}
+		</style>
+		<script>
+			window,onload=function(){
+				new TabChange('div1');
+				new limitgrap('div2');
+			}
+		</script>
+	</head>
+	<body style="width: 4000px;height: 4000px;">
+		<div id="div1">原来的拖拽</div>
+		<div id="div2">继承原来拖拽的对象</div>
+	</body>
+</html>
